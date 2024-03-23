@@ -1,13 +1,612 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button{
+  cursor: pointer;
+}
+a{
+  color: #fff;
+}
+
+#logo{
+  cursor: pointer;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+#root{
+  max-width: 1440px;
+  width: 100%;
+}
+
+.main{
+  max-width: 1440px;
+  width: 100%;
+  background-color: white;
+}
+
+.first{
+  width: 1440px;
+height: 40px;
+background: #363534;
+}
+
+.hrefs{
+  width: 1202px;
+height: 14px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 30px;
+padding-top: 20px ;
+padding-left:  200px;
+}
+
+.hrefs > a{
+  font-family: Gilroy;
+font-size: 12px;
+font-weight: 500;
+line-height: 14.12px;
+letter-spacing: 0.023em;
+text-align: left;
+color: #fff;
+opacity: 0.8;
+}
+
+.navbar{
+  width: 1440px;
+  height: 90px;
+  background: #2B2A29;
+
+}
+
+nav {
+  width: 1202px;
+  display: flex;
+justify-content: center;
+align-items: center;
+gap: 30px;
+padding-left: 200px;
+}
+
+
+.phone{
+  display: flex;
+  gap: 10px;
+}
+
+.buttons{
+  display: flex;
+  gap: 29px;
+}
+
+.buttons > #firstBtn{
+  width: 175px;
+height: 46px;
+background: none;
+border: 1px solid #fff;
+color: #fff;
+}
+
+#secondBtn {
+  background: none;
+  border: 1px solid #fff;
+  width: 46px;
+height: 46px;
+border-radius: 3px 0px 0px 0px;
+border: 1px 0px 0px 0px;
+opacity: 0.07px;
+ 
+}
+
+.buttons > #thirdBtn{
+  background: none;
+  border: 1px solid #fff;
+  width: 46px;
+height: 46px;
+border-radius: 3px 0px 0px 0px;
+border: 1px 0px 0px 0px;
+opacity: 0.07px;
+ 
+}
+.buttons > #fourthBtn{
+  background: none;
+  border: 1px solid #fff;
+  width: 46px;
+height: 46px;
+border-radius: 3px 0px 0px 0px;
+border: 1px 0px 0px 0px;
+opacity: 0.07px;
+}
+
+
+.second{
+  width: 1440px;
+height: 55px;
+background-color: #89975C;
+}
+
+.second > .href-b{
+  width: 1202px;
+  display: flex;
+align-items: center;
+gap: 29px;
+padding-top: 20px ;
+padding-left:  390px;
+}
+
+.second > .href-b > a{
+  font-family: Roboto Slab;
+font-size: 16px;
+font-weight: 700;
+line-height: 21.1px;
+}
+
+.main{
+  background-image: url(./assets/img/background.jpg);
+  width: 1440px;
+height: 600px;
+}
+
+.text{
+  width: 720px;
+  height: 166px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 390px;
+  padding-top: 200px;
+  gap: 25px;
+}
+
+.text > span{
+  font-family: Gilroy;
+font-size: 20px;
+font-weight: 600;
+line-height: 44px;
+text-align: left;
+color:  #537223;
+}
+
+.text > button{
+  width: 50%;
+height: 40px;
+border-radius: 3px 0px 0px 0px;
+border: none;
+box-shadow: 0px 15px 50px 0px #00000066;
+font-family: HelveticaNeueCyr;
+font-size: 16px;
+font-weight: 400;
+line-height: 15.92px;
+letter-spacing: 0.01em;
+text-align: left;
+}
+
+
+.card > img{
+  cursor: pointer;
+}
+
+.button-d{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 200px;
+  padding: 20px 200px;
+}
+
+.cards{
+  display: flex;
+  padding: 20px 100px;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.card-s{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Masalan, 10 piksel radiusli va 0.1 opacityga ega bo'lgan qora oqibat */
+  background-color: #fff;
+height: 469px;
+}
+
+
+
+
+.card > p{
+  font-family: Roboto Slab;
+font-size: 22px;
+font-weight: 400;
+line-height: 22px;
+text-align: left;
+}
+
+.card > span{
+  font-family: Gilroy;
+font-size: 14px;
+font-weight: 500;
+line-height: 14px;
+text-align: left;
+color: #2B2A29B2;
+}
+
+.card > h1{
+  font-family: Gilroy;
+font-size: 40px;
+font-weight: 600;
+line-height: 44px;
+text-align: left;
+color: #FDB540;
+}
+
+.card > button{
+  width: 238px;
+  height: 60px;
+  border-radius: 3px 0px 0px 0px;
+  border: none;
+  border: 1px solid #537223;
+  background: none;
+  font-family: HelveticaNeueCyr;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 15.92px;
+  letter-spacing: 0.01em;
+  color: #537223;
+
+}
+
+.mainew{
+  background-image: url(./assets/img/ne.png);
+  width: 1440px;
+height: 600px;
+
+
+}
+
+.button-s{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 200px;
+  padding: 20px 200px;
+  padding-right: 750px;
+}
+
+.button-s > h1{
+color: #FFFFFF;
+}
+
+
+.afternew{
+  width: 1440px;
+height: 459px;
+padding-top: 69px;
+display: flex;
+flex-direction: column;
+gap: 62px;
+}
+
+.afternew > h1{
+  padding-left: 520px;
+}
+
+
+
+.box-x{
+  display: flex;
+  gap: 30px;
+margin: auto;
+
+}
+
+.box{
+  width: 278px;
+height: 251px;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+border: 1px solid black;
+}
+
+.text-a{
+  width: 185px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-a > img{
+  width: 20%;
+}
+
+.text-a> p{
+  font-family: Roboto Slab;
+font-size: 24px;
+font-weight: 400;
+line-height: 26.4px;
+text-align: left;
+color: Green;
+}
+
+.text-a > span{
+  font-family: Gilroy;
+font-size: 16px;
+font-weight: 400;
+line-height: 22.4px;
+text-align: left;
+}
+
+.newafter{
+  width: 1440px;
+height: 648px;
+background-image: url(./assets/img/BG.png);
+display: flex;
+flex-direction: row ;
+position: relative;
+gap: 60px;
+}
+
+.left {
+  width: 785px;
+height: 205px;
+display: flex;
+flex-direction: column;
+gap: 60px;
+padding-left: 40px;
+padding-top: 60px;
+}
+
+.left > .box-m{
+  display: flex;
+  gap: 28px;
+}
+
+.right img {
+  width: 100%; 
+  max-width: 600px; /* Maksimal ruxsat etilgan hajm */
+  height: auto; /* Ta'ranga nisbatni saqlash */
+  position: absolute;
+  bottom: 70px;
+}
+
+.newafter  h1{
+  font-family: Gilroy;
+font-size: 40px;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 0.02em;
+text-align: left;
+color: #FDB540;
+}
+
+.newafter p{
+  font-family: Gilroy;
+font-size: 16px;
+font-weight: 400;
+line-height: 22.4px;
+text-align: left;
+color:  #FFFFFF;
+}
+
+.text-c{
+  width: 148px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding-top: 14px;
+}
+
+.text-c > img{
+  width: 20%;
+}
+
+
+.newafter >.left >   .box-m>  .box1{
+  width: 175px;
+  height: 175px;
+  border: 2px solid #FDB540;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.text-c > p{
+  font-family: Roboto Slab;
+font-size: 16px;
+font-weight: 400;
+line-height: 17.6px;
+text-align: center;
+color: #537223;
+font-weight: 550;
+}
+
+
+.uybirinchi{
+  display: flex;
+  margin: auto;
+  gap: 30px;
+}
+
+.uy{
+  display: flex;
+  flex-direction: column;
+  background-color: darkgray;
+  width: 380px;
+height: 340px;
+top: 4806px;
+left: 360px;
+gap: 0px;
+border-radius: 3px 3px 0px 0px;
+opacity: 0px;
+}
+
+.uy span{
+  font-family: Roboto Slab;
+font-size: 22px;
+font-weight: 400;
+line-height: 22px;
+text-align: center;
+margin: auto;
+}
+
+.slider{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.slider .text-l{
+  display: flex;
+  padding-top: 25px;
+  gap: 620px;
+  padding-left: 80px;
+}
+
+.slider .text-l h1{
+  font-family: Gilroy;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.slider > .image {
+  display: flex;
+  justify-content: center;
+}
+
+.slider > .image > img{
+  width: 16%;
+}
+.afterslider{
+  width: 1440px;
+height: 700px;
+background-color: rgb(204, 197, 197);
+padding-top: 69px;
+}
+
+.afterslider > h1{
+font-family: Gilroy;
+font-size: 40px;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 0.02em;
+text-align:center;
+color:  #2B2A29;
+padding-bottom: 44px;
+}
+
+.parent{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-left: 160px;
+}
+
+.box-d{
+  width: 380px;
+height: auto;
+
+}
+
+.box-d > .text-al h1{
+  font-family: Roboto Slab;
+font-size: 26px;
+font-weight: 400;
+line-height: 31.2px;
+text-align: left;
+color:#537223;
+
+}
+.text-al{
+  display: flex;
+flex-direction: column;
+gap: 15px;
+background-color: #fff;
+width: 380px;
+height: 500px;
+padding: 21px 17px;
+}
+
+.text-al p{
+  font-family: Gilroy;
+font-size: 16px;
+font-weight: 600;
+line-height: 19.2px;
+text-align: left;
+color:  #2B2A2966;
+}
+
+.text-al > p > span{
+  font-family: Gilroy;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.6px;
+text-align: left;
+color: #2B2A29;
+
+}
+
+.rasmlar{
+  display: flex;
+  gap: 14px;
+}
+
+.map{
+  background-image: url(./assets/img/map.png);
+  width: 1440px;
+  height: 330px;
+}
+
+.yangi{
+  width: 1440px;
+height: 90px;
+display: flex;
+gap: 83px;
+background: #2B2A29;
+}
+
+.yangilar{
+  display: flex;
+gap: 83px;
+margin: auto;
+align-items: center;
+}
+
+.footer{
+  width: 1440px;
+  height: 25px;
+background: #2B2A29;
+display: flex;
+justify-content: space-around;
+}
+
+.footer > a{
+  color: white;
+  opacity: 0.5;
 }
